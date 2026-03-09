@@ -20,7 +20,7 @@ fi
 
 # Fetch recent thoughts (last 5)
 RECENT=$(curl -s --max-time 3 \
-    -H "X-API-Key: $ARX_KEY" \
+    -H "X-ARX-Key: $ARX_KEY" \
     "$ARX_URL/api/v2/thoughts?limit=5" 2>/dev/null)
 
 if [ $? -ne 0 ] || [ -z "$RECENT" ]; then
