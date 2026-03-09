@@ -1,0 +1,16 @@
+{
+  "name": "arx",
+  "version": "0.1.0",
+  "description": "Personal knowledge graph that learns your dialect. Give your AI a memory.",
+  "author": "Arc Labs",
+  "repository": "https://github.com/arclabs/arx-claude-plugin",
+  "mcp_servers": {
+    "arx": {
+      "command": "npx",
+      "args": ["-y", "@arx/mcp-server"],
+      "env": {
+        "ARX_CONFIG": "~/.arx/config.json"
+      }
+    }
+  }
+}
